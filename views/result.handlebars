@@ -1,0 +1,62 @@
+
+<section class="padd-top-60">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-12 text-center">
+
+                <h3>What's Up<span class="text-thin">We've found your perfect match. </span> </h3>
+
+            </div>
+
+        </div>
+
+        <br> <br> <br> <br>
+
+        <div class="row words">
+
+            {{#each dog_profile}}
+
+            <div class="col-xs-3">
+
+                <h6>{{dog_name}}</h6>
+
+                <img src="{{img_url}}" alt="" height="200" width="200">
+
+            </div>
+
+            <div class="col-xs-3">
+
+                <br>
+
+                <p><b>Owner:</b> {{first_name}} </p>
+
+                <p><b>Dog Breed: </b>{{dog_breed}} </p>
+
+                <p><b>Dog Personality: </b>{{dog_personality}} </p>
+
+                <p><b>Dog Gender:</b> {{dog_gender}} </p>
+
+                <p><b>Dog Age:</b> {{dog_age}} </p>
+
+                <p><b>Zip Code: </b>{{zipcode}}</p>
+
+                <br>
+
+                <a href="/scheduler"><input class="blackbox2" type="submit" value="Let's Bone"></a>
+
+                <br><br>
+
+            </div>
+
+            {{/each}}
+
+        </div>
+
+    </div>
+
+    <div class="clearfix"></div>
+
+</section>
