@@ -1,0 +1,5 @@
+DROP DATABASE IF EXISTS `pupps`;
+CREATE DATABASE `pupps`;
+
+
+  

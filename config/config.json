@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Password1!",
-    "database": "puppy_info",
+    "database": "pupps",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
