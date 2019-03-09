@@ -22,6 +22,9 @@ app.use(bodyParser.urlencoded({ extended: true}));
 app.use(methodOverride(`method`))
 
 // Set Handlebars // 
+const routes = require('./routes/puppsController');
+app.use(routes);
+
 app.engine(`handlebars`, handlebars({
   extname: `handlebars`,
   defaultLayout: `main`,
