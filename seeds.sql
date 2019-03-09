@@ -1,2 +1,0 @@
-USE `puppy_info`;
-INSERT INTO `dog_info` VALUES (1,'lisa','johnson','ljohnson@yahoo.com','scarlet','Female','English Shepherd','2807 Parliament Cir',30066,'Confident',11,39,'https://upload.wikimedia.org/wikipedia/commons/5/54/TricolorEnglishShepherdDog.jpg'), (2,'mark','smith','ljohnson@yahoo.com','carlos','male','Cumberland-Sheepdog','559 shannon dr',30066,'Independent',8,45,`http://www.dogbreedstandards.com/wp-content/uploads/2013/04/Cumberland-Sheepdog.jpg`), ()
