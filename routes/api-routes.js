@@ -1,3 +1,3 @@
-//Import packages
-const path = require(`path`);
+// Requiring our models
+const db = require(`../models`);
 
