@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "rootroot5",
+    "password": "password1!",
     "database": "pupps",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -14,10 +14,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": "rootroot5",
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "use_env_variable": "JAWSDB_URL"
   }
 }
