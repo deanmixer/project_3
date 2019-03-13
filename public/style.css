@@ -1,3 +1,55 @@
 body {
-    /* background-color: grey; */
+    background-color: #F5F5F5;
+}
+
+#bodycontent {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+#caroMain {
+    padding-top: 50px;
+    padding-bottom: 4px;   
+}
+#carpic {
+    height: 100%;
+    /* max-width: 100%; */
+    width: auto;
+    /* width: auto; */
+    object-fit: cover;
+}
+
+#carousel1 {
+    height: 500px;   
+}
+
+h4 {
+    color: #f39331;
+}
+
+.carousel-caption {
+    background-color: #343a40;
+    color: white;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#headline {
+    padding-bottom: 30px;
+}
+
+#profilePhoto {
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 570px) {
+    #carousel1 {
+        height: 300px;   
+    }
 }

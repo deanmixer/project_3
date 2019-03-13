@@ -1,69 +1,64 @@
-{{#myProfile}}
+{{!-- {{#myProfile}} --}}
 
-<section class="padd-top-60">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="../">
+        <img src="/images/dog.png" width="22" height="22" class="d-inline-block align-mid mb-1" alt="">
+        Puppy Play Date
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="../search">Find a Friend</a>
+        {{!-- <a class="nav-link" href="#">Find a Friend<span class="sr-only">(current)</span></a> --}}
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="../scheduler">Manage Dates</a>
+      </li>
+      <li class="nav-item  pr-2 active">
+        <a class="nav-link" href="../profile">Profile<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-12 text-center">
-
-                <h3><span class="text-thin">I'm</span> MUTTS <span class="text-thin"> over my best friend!</span></h3>
-
-            </div>
-
+<div class="container" id="bodycontent">
+    <div class="row" id="headline">
+        <div class="col-md-12 text-center">
+            <h3><span class="text-thin">I'm</span> MUTTS<span class="text-thin"> over my best friend!</span></h3>
         </div>
-
-        <br> <br> <br> <br>
-
-        <div class="row words">
-
-            <div class="col-xs-3" align="left">                
-
-                <h5> A little about me:</h5> <br>
-
-                <p> <b>First Name:</b> {{first_name}} </p>
-
-                <p> <b>Last Name: </b>{{last_name}} </p>
-
-                <p> <b>Email: </b>{{email}}</p>
-
-                <p> <b>Address: </b>{{address}} </p>
-
-                <p> <b>Zip Code: </b>{{zipcode}} </p>
-
-            </div>
-
-            <div class="col-xs-3" align="right"> 
-
-                <img height ="150" src={{img_url}}>
-
-            </div>
-
-            <div class="col-xs-3" align="left">
-
-                <h5>About my best friend:</h5> <br>
-
-                <p> <b>Dog Name: </b>{{dog_name}} </p>
-
-                <p> <b>Breed: </b>{{dog_breed}} </p>
-
-                <p> <b>Gender: </b>{{dog_gender}} </p>
-
-                <p> <b>Age:</b> {{dog_age}} </p>
-
-                <p> <b>Personality:</b> {{dog_personality}} </p>
-
-                <br>
-
-            </div>
-
-        </div>
-
     </div>
+    <div class="row text-center"> 
+        <div class="col-md-12" id="profilePhoto"> 
+            {{!-- <img height ="150" src={{img_url}}> --}}
+            <img height ="150" src="/images/banner4.jpg">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <h4>About me</h4>
+            <p><b>First Name:</b> {{first_name}}<i class="far fa-edit"></i></p>
+            <p><b>Last Name:</b> {{last_name}}<i class="far fa-edit"></i></p>
+            <p><b>Email:</b> {{email}}<i class="far fa-edit"></i></p>
+            <p><b>Address:</b> {{address}}<i class="far fa-edit"></i></p>
+            <p><b>Zip Code:</b> {{zipcode}}<i class="far fa-edit"></i></p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h4>About my best friend</h4>
+            <p><b>Dog Name:</b> {{dog_name}}<i class="far fa-edit"></i></p>
+            <p><b>Breed:</b> {{dog_breed}}<i class="far fa-edit"></i></p>
+            <p><b>Gender:</b> {{dog_gender}}<i class="far fa-edit"></i></p>
+            <p><b>Age:</b> {{dog_age}}<i class="far fa-edit"></i></p>
+            <p><b>Personality:</b> {{dog_personality}}<i class="far fa-edit"></i></p>
+        </div>
+    </div>
+</div>
+    {{!-- <div class="clearfix"></div> --}}
 
-    <div class="clearfix"></div>
 
-</section>
-
-{{/myProfile}}
+{{!-- {{/myProfile}} --}}
