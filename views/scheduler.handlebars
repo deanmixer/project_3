@@ -1,85 +1,52 @@
-<section class="padd-top-60">
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
+    <a class="navbar-brand" href="../">
+        <img src="/images/dog.png" width="22" height="22" class="d-inline-block align-mid mb-1" alt="">
+        Puppy Play Date
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="../search">Find a Friend</a>
+        {{!-- <a class="nav-link" href="#">Find a Friend<span class="sr-only">(current)</span></a> --}}
+      </li>
+      <li class="nav-item  pr-2 active">
+        <a class="nav-link" href="../scheduler">Manage Dates<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item pr-2">
+        <a class="nav-link" href="../profile">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Logout</a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="container">
 
-        <div class="row">
-
-            <div class="col-md-12 text-center">
-
-                <h3>"Yep<span class="text-thin">I got this!!!!" </span> </h3>
-
-            </div>
-
+<div class="container" id="bodycontent">
+    <div class="row" id="headline">
+        <div class="col-md-12 text-center">
+            <h3>"Yep! <span class="text-thin">I got this!" </span> </h3>
         </div>
-
-        <br> <br> <br> <br>
-
-        <div class="single-blog-desc">
-
-            <p>It's time to set up a play date, setup your date and let the fun begin.</p>
-
-        </div>
-
-        <br>
-
-        <div class="row contact-form margin-t20">
-
-            <div class="col-md-12">
-
-                <form method="post">
-
-                    <div class="col-md-8 comment">
-
-                        <input type="text" required="" name="email" placeholder="Email">
-
-                    </div>
-
-                    <div class="col-md-4 comment">
-
-                        <input type="text" required="" name="date" placeholder="Date (mm/dd/yyyy)">
-
-                    </div>
-
-                    <div class="clearfix"> </div>
-
-                    <br>
-
-                    <div class="col-md-8 comment">
-
-                        <input type="text" required="" name="sub" placeholder="Subject">
-
-                    </div>
-
-                    <div class="col-md-4 comment">
-
-                        <input type="text" required="" name="time" placeholder="Time (hh:mm)">
-
-                    </div>
-
-                    <div class="clearfix"> </div>
-
-                    <div class="col-md-12 col-xs-12">
-
-                        <textarea required="" name="message" placeholder="Message"></textarea>
-
-                    </div>
-
-                    <div class="clearfix"> </div>
-
-                    <a href="/thanks">
-
-                        <input class="blackbox" type="submit" value="Send">
-
-                    </a>
-
-                </form>
-
-            </div>
-
-        </div>
-
     </div>
-
-    <div class="clearfix"></div>
-
-</section>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Pending Play Dates</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Upcoming Play Dates</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Past Play Dates</h4>
+        </div>
+    </div>
+</div>
