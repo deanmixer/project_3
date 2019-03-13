@@ -7,11 +7,11 @@ module.exports = function (sequelize, DataTypes) {
       primaryKey: true,
     },
     match_sender: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     match_receiver: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     date: {
