@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
       primaryKey: true,
     },
     first_name: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
       validate: {
         notEmpty: {
@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     last_name: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
       validate: {
         notEmpty: {
@@ -27,7 +27,7 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     email: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
       validate: {
         notEmpty: {
@@ -37,19 +37,19 @@ module.exports = function(sequelize, DataTypes) {
       }
     },
     puppy_name: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     puppy_gender: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     puppy_breed: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     address: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     zipcode: {
@@ -57,7 +57,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
     },
     puppy_personality: {
-      type: DataTypes.VARCHAR(255),
+      type: DataTypes.STRING(255),
       allowNull: false,
     },
     puppy_age: {
