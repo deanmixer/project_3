@@ -8,7 +8,7 @@ body {
 }
 
 #caroMain {
-    padding-top: 50px;
+    padding-top: 65px;
     padding-bottom: 4px;   
 }
 #carpic {
@@ -20,7 +20,7 @@ body {
 }
 
 #carousel1 {
-    height: 500px;   
+    height: 625px;   
 }
 
 h4 {
@@ -48,8 +48,23 @@ h4 {
     padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 768px) {
+    .navbar-brand{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
     #carousel1 {
         height: 300px;   
+    }
+    .carousel-caption {
+        font-size: 0.9em;
+        margin: auto;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        margin-top: 2px;
+        border-radius: 25px;
     }
 }

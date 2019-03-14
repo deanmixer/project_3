@@ -1,105 +1,126 @@
-<section class="padd-top-60">
+{{!-- <section class="padd-top-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3><span class="text-thin">Welcome to puppy-play-date! We can't wait to </span>Get the puppy math <span class="text-thin">with yours.</span></h3>
+            </div>
+        </div>
+        <br> <br>
+        <div class="row">
+            <div class="col-xs-4" align="right">
+                <form action="/upload_d" method="POST" enctype="multipart/form-data">
+                    <label>Dog Image: </label>
+                    <input type="file" name="img">
+                    <input type="submit" value="Upload">
+                </form><br>
+            </div>
+            <div class="col-xs-4" align="right">
+                <form action="/create" method="post">
+                    <label for="first_name">First Name: </label>
+                    <input id="first_name" required="" type="text" align="right" name="first_name" value=""><br>
+                    <label for="last_name">Last Name: </label>
+                    <input id="last_name" required="" type="text" align="right" name="last_name" value=""><br>
+                    <label for="email">Email: </label>
+                    <input id="email" required="" type="text" name="email" value=""><br>
+                    <label for="address">Address: </label>
+                    <input id="address" required="" type="text" name="address" value=""><br>
+                    <label for="zipcode">Zip Code: </label>
+                    <input id="zipcode" required="" type="text" name="zipcode" value=""><br>
+                    <label for="dog_name">Dog Name: </label>
+                    <input id="dog_name" required="" type="text" name="dog_name" value=""><br>
+                    <label for="dog_breed">Dog Breed: </label>
+                    <input id="dog_breed" required="" type="text" name="dog_breed" value=""><br>
+                    <label for="dog_gender">Dog Gender: </label>
+                    <input id="dog_gender" required="" type="text" name="dog_gender" value=""><br>
+                    <label for="dog_age">Dog Age: </label>
+                    <input id="dog_age" required="" type="text" name="dog_age" value=""><br>
+                    <label for="dog_personality">Dog Personality: </label>
+                    <input id="dog_personality" type="text" name="dog_personality" value=""><br>
+                    <label for="dog_weight">Dog Weight: </label>
+                    <input id="dog_weight" type="text" name="dog_weight" value=""><br>
+                    <br>
+            </div>
+            <div class="col-xs-4" align="left">
+                <img src="/images/puppy1.jpg" height="300" width="250">
+            </div>
+            <div class="col-xs-8" align="right">
+                <input class="blackbox" type="submit" value="Sign Up">
+                </form>
+            </div>
+            <div class="clearfix"></div>
+</section> --}}
 
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-12 text-center">
-
-                <h3><span class="text-thin">Welcome to puppy-play-date! We can't wait to </span>Get the puppy math <span class="text-thin">with yours.</span></h3>
-
+                <h3>Sign up</h3>
             </div>
-
         </div>
-
-        <br> <br>
-
-        <div class="row">
-
-            <div class="col-xs-4" align="right">
-
-                <form action="/upload_d" method="POST" enctype="multipart/form-data">
-
-                    <label>Dog Image: </label>
-
-                    <input type="file" name="img">
-
-                    <input type="submit" value="Upload">
-
-                </form><br>
-
-            </div>
-
-            <div class="col-xs-4" align="right">
-
-                <form action="/create" method="post">
-
-                    <label for="first_name">First Name: </label>
-
-                    <input id="first_name" required="" type="text" align="right" name="first_name" value=""><br>
-
-                    <label for="last_name">Last Name: </label>
-
-                    <input id="last_name" required="" type="text" align="right" name="last_name" value=""><br>
-
-                    <label for="email">Email: </label>
-
-                    <input id="email" required="" type="text" name="email" value=""><br>
-
-                    <label for="address">Address: </label>
-
-                    <input id="address" required="" type="text" name="address" value=""><br>
-
-                    <label for="zipcode">Zip Code: </label>
-
-                    <input id="zipcode" required="" type="text" name="zipcode" value=""><br>
-
-                    <label for="dog_name">Dog Name: </label>
-
-                    <input id="dog_name" required="" type="text" name="dog_name" value=""><br>
-
-                    <label for="dog_breed">Dog Breed: </label>
-
-                    <input id="dog_breed" required="" type="text" name="dog_breed" value=""><br>
-
-                    <label for="dog_gender">Dog Gender: </label>
-
-                    <input id="dog_gender" required="" type="text" name="dog_gender" value=""><br>
-
-                    <label for="dog_age">Dog Age: </label>
-
-                    <input id="dog_age" required="" type="text" name="dog_age" value=""><br>
-
-                    <label for="dog_personality">Dog Personality: </label>
-
-                    <input id="dog_personality" type="text" name="dog_personality" value=""><br>
-
-
-                    <label for="dog_weight">Dog Weight: </label>
-
-                    <input id="dog_weight" type="text" name="dog_weight" value=""><br>
-
+        <br> <br> <br> <br>
+        <div class="row words">
+            <div class="col-xs-6" align="right">                
+                <form>
+                                <h4>About me:</h4>
+                    <label for="firstName">First Name: </label>
+                    <input id="firstName" required="" type="text" name="firstName" placeholder="First Name"><br>
+                    <label for="lastName">Last Name: </label>
+                    <input id="lastName" required="" type="text" name="lastName" placeholder="Last Name"><br>
+                    <label for="zipCode">Zip Code: </label>
+                    <input id="zipCode" required="" type="text" name="zipCode" placeholder="Zip Code"><br>
                     <br>
-
-            </div>
-
-
-            <div class="col-xs-4" align="left">
-
-                <img src="/images/puppy1.jpg" height="300" width="250">
-
-            </div>
-
-            <div class="col-xs-8" align="right">
-
-
-                <input class="blackbox" type="submit" value="Sign Up">
-
+                    <br>
+                                {{!-- <h4>About my friend:</h4>
+                    <label for="puppyName">Dog Name: </label>
+                    <input id="puppyName" required="" type="text" name="puppyName" placeholder="Dog Name"><br>
+                    <label for="dogGender">Dog Gender: </label>
+                    <input id="dogGender" required="" type="text" name="dogGender" placeholder="Dog Gender"><br>
+                    <label for="dogBreed">Dog Breed: </label>
+                    <input id="dogBreed" required="" type="text" name="dogBreed" placeholder="Dog Breed"><br>
+                    <label for="dogPers">Dog Personality: </label>
+                    <input id="dogPers" required="" type="text" name="dogPers" placeholder="Dog Presonality"><br>
+                    <label for="dogAge">Dog Age: </label>
+                    <input id="dogAge" required="" type="text" name="dogAge" placeholder="Dog Age"><br>
+                    <label for="dogWeight">Dog Weight: </label>
+                    <input id="dogWeight" required="" type="text" name="dogWeight" placeholder="Dog Weight"><br>
+                    <label for="dogImage">Dog Image: </label>
+                    <input id="dogImage" required="" type="text" name="dogImage" placeholder="Dog Image"><br> --}}
+                    <br>
+                    <br>
+                    {{!-- <label for="email">Email: </label> --}}
+                    <input id="email" required="" type="email" name="email" placeholder="Email"><br>
+                    {{!-- <label for="password">Password: </label> --}}
+                    <input id="password" required="" type="password" name="password" placeholder="password"><br>
+                    <br>
+                    <input type="submit" value="Submit"> {{!-- Can have a a BUTTON or INPUT, just make sure to have type="submit" --}}
                 </form>
-
             </div>
+        </div>
+    </div>
 
+<script>
+    $('form').on('submit', function(e){
+    e.preventDefault();
+    // const email = $("#email").val().trim;
+    // const password = $("#password").val().trim;
+    const email = $('input[type="email"]').val().trim();
+    const password = $('input[type="password"]').val().trim();
+    //const firstName = $("#firstName").val().trim();
+    const user1 = {
+        email,
+        password
+    }
 
-            <div class="clearfix"></div>
+    $.ajax({
+        url: '/api/signup', 
+        method: 'POST',
+        data: user1
+    })
+    .then(function(data){
+        window.location.href = '/search';
+    })
+    .catch(function(){
+        window.location.href = '/signup';
+    });
 
-</section>
+});
+</script>
