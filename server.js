@@ -24,8 +24,11 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(methodOverride(`method`));
 
 
-// Set Handlebars //
-const routes = require('./routes/puppsController');
+
+// Set Handlebars // 
+const routes = require('./routes/puppsController')
+const apiRoute = require('./routes/api-routes')(app);
+
 app.use(routes);
 
 app.engine(`handlebars`, handlebars({
