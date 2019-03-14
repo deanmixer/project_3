@@ -1,4 +1,4 @@
-module.exports = function (sequelize, DataTypes) {
+module.exports = function(sequelize, DataTypes) {
   const playDate = sequelize.define('playDate', {
     id: {
       type: DataTypes.INTEGER(255),
@@ -32,4 +32,4 @@ module.exports = function (sequelize, DataTypes) {
     },
   });
   return playDate;
-}
+};

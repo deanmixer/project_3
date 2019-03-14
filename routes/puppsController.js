@@ -1,5 +1,5 @@
 const express = require(`express`);
-const router = express.Router();
+const router = express.router();
 const pupps = require(`../models/pupps.js`);
 // get routes -> index.handlebars
 // router.get(`/`, function(req, res) {
