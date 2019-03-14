@@ -66,7 +66,11 @@ module.exports = function(sequelize, DataTypes) {
     },
     puppy_weight: {
       type: DataTypes.INTEGER(255),
-      allowNull: false,
+      allowNull: true,
+    },
+    img_url: {
+      type: DataTypes.STRING(255),
+      allowNull: true,
     },
   });
   return pupps;
