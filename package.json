@@ -1,16 +1,16 @@
 {
   "name": "puppy-play-date",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Match making dog owner app",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": ""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/puppy-play-date/puppy-play-date.git"
   },
-  "author": "",
+  "author": "Viviana, Helmi, Dean, Brandon",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/puppy-play-date/puppy-play-date/issues"

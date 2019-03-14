@@ -1,5 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
-  const pupps = sequelize.define('pupps',{
+  const pupps = sequelize.define('pupps', {
     id: {
       type: DataTypes.INTEGER(255),
       allowNull: false,
@@ -13,8 +13,8 @@ module.exports = function(sequelize, DataTypes) {
         notEmpty: {
           args: true,
           msg: `Please give the user a name.`,
-        }
-      }
+        },
+      },
     },
     last_name: {
       type: DataTypes.STRING(255),
@@ -23,8 +23,8 @@ module.exports = function(sequelize, DataTypes) {
         notEmpty: {
           args: true,
           msg: `Please give the user a lastName.`,
-        }
-      }
+        },
+      },
     },
     email: {
       type: DataTypes.STRING(255),
@@ -33,8 +33,8 @@ module.exports = function(sequelize, DataTypes) {
         notEmpty: {
           args: true,
           msg: `Please enter a valid email.`,
-        }
-      }
+        },
+      },
     },
     puppy_name: {
       type: DataTypes.STRING(255),
@@ -70,4 +70,4 @@ module.exports = function(sequelize, DataTypes) {
     },
   });
   return pupps;
-}
+};
