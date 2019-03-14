@@ -1,6 +1,6 @@
 -- Seeds for the SQL table, puppy_info
 USE puppy_info;
-INSERT INTO puppy_info (first_name,last_name,email,meet_location,puppy_name,puppy_gender,puppy_breed,puppy_personality,puppy_age,puppy_weight,img_url)
+INSERT INTO puppy_info (first_name,last_name,email,address,puppy_name,puppy_gender,puppy_breed,puppy_personality,puppy_age,puppy_weight,img_url,zipcode)
 VALUES
 ('Darryl','Neal','DarNealx1@gmail.com','Rock Springs Dog Park','Jellybean','Female','Tibetan Mastiff','Independent, Reserved, Intelligent',8,140,'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12223604/Tibetan-Mastiff-On-White-01.jpg'),
 ('Viktor', 'Clemons','ClemonsVx2@gmail.com','Chattapoochee Dog Park','Marbles','Male','Pomeranian','Inquisitive, Bold, Lively',3,5,'https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225627/Pomeranian-On-White-01.jpg'),
