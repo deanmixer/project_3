@@ -1,5 +1,5 @@
 language: node_js
-node_js: "8"
+node_js: node
 branches:
   only:
   - master
@@ -8,3 +8,7 @@ cache:
     - node_modules
 before_install:
   - mysql -e 'CREATE DATABASE puppy_info_db;'
+install:
+  - npm install
+script:
+  - npm test
