@@ -25,7 +25,8 @@ app.use(methodOverride(`method`))
 
 
 // Set Handlebars // 
-const routes = require('./routes/puppsController');
+const routes = require('./routes/puppsController')
+const apiRoute = require('./routes/api-routes')(app);
 app.use(routes);
 
 app.engine(`handlebars`, handlebars({
