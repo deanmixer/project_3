@@ -1,13 +1,8 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
-    "password": "rootroot5",
-    "database": "pupps",
-=======
     "password": "Alpha7iivrjk15!",
     "database": "puppy_info",
->>>>>>> master
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
