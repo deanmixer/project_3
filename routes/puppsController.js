@@ -51,6 +51,15 @@ router.get('/profile', privateRoute, function(req, res) {
     console.log(decoded);
     const hbsObject = {
       email: decoded.email,
+      firstName: decoded.firstName,
+      lastName: decoded.lastName,
+      zipCode: decoded.zipCode,
+      puppyName: decoded.puppyName,
+      puppyBreed: decoded.puppyBreed,
+      puppyPersonality: decoded.puppyPersonality,
+      puppyAge: decoded.puppyAge,
+      puppyWeight: decoded.puppyWeight,
+      imgUrl: decoded.imgUrl,
       // email: (jwt.verify(req.cookies.token.email, 'ilovepups'))
     };
     console.log(hbsObject);
