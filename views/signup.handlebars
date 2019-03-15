@@ -69,7 +69,7 @@
                     <input id="zipCode" required="" type="text" name="zipCode" placeholder="Zip Code"><br>
                     <br>
                     <br>
-                                {{!-- <h4>About my friend:</h4>
+                                <h4>About my friend:</h4>
                     <label for="puppyName">Dog Name: </label>
                     <input id="puppyName" required="" type="text" name="puppyName" placeholder="Dog Name"><br>
                     <label for="dogGender">Dog Gender: </label>
@@ -83,12 +83,12 @@
                     <label for="dogWeight">Dog Weight: </label>
                     <input id="dogWeight" required="" type="text" name="dogWeight" placeholder="Dog Weight"><br>
                     <label for="dogImage">Dog Image: </label>
-                    <input id="dogImage" required="" type="text" name="dogImage" placeholder="Dog Image"><br> --}}
+                    <input id="dogImage" required="" type="text" name="dogImage" placeholder="Dog Image"><br>
                     <br>
                     <br>
-                    {{!-- <label for="email">Email: </label> --}}
+                    <label for="email">Email: </label>
                     <input id="email" required="" type="email" name="email" placeholder="Email"><br>
-                    {{!-- <label for="password">Password: </label> --}}
+                    <label for="password">Password: </label>
                     <input id="password" required="" type="password" name="password" placeholder="password"><br>
                     <br>
                     <input type="submit" value="Submit"> {{!-- Can have a a BUTTON or INPUT, just make sure to have type="submit" --}}
@@ -104,10 +104,29 @@
     // const password = $("#password").val().trim;
     const email = $('input[type="email"]').val().trim();
     const password = $('input[type="password"]').val().trim();
-    //const firstName = $("#firstName").val().trim();
+    const firstName = $("#firstName").val().trim();
+    const lastName = $("#lastName").val().trim();
+    const zipCode = $("#zipCode").val().trim();
+    const puppyName = $("#puppyName").val().trim();
+    const puppyGender = $("#dogGender").val().trim();
+    const puppyBreed = $("#dogBreed").val().trim();
+    const puppyPersonality = $("#dogPers").val().trim();
+    const puppyAge = $("#dogAge").val().trim();
+    const puppyWeight = $("#dogWeight").val().trim();
+    const imgUrl = $("#dogImage").val().trim();
     const user1 = {
         email,
-        password
+        password,
+        firstName,
+        lastName,
+        zipCode,
+        puppyName,
+        puppyGender,
+        puppyBreed,
+        puppyPersonality,
+        puppyAge,
+        puppyWeight,
+        imgUrl
     }
 
     $.ajax({

@@ -21,7 +21,7 @@
         <a class="nav-link" href="../profile">Profile<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../api/signout"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Logout</button></a>
+        <a class="nav-link" href="../login"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Change Profile</button></a>
       </li>
     </ul>
   </div>
@@ -36,25 +36,24 @@
     <div class="row text-center"> 
         <div class="col-md-12" id="profilePhoto"> 
             {{!-- <img height ="150" src={{img_url}}> --}}
-            <img height ="150" src="/images/banner4.jpg">
+            <img height ="150" src={{imgUrl}}>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <h4>About me</h4>
-            <p><b>First Name:</b> {{first_name}}<i class="far fa-edit"></i></p>
-            <p><b>Last Name:</b> {{last_name}}<i class="far fa-edit"></i></p>
-            <p><b>Email:</b> {{email}}<i class="far fa-edit"></i></p>
-            <p><b>Address:</b> {{address}}<i class="far fa-edit"></i></p>
-            <p><b>Zip Code:</b> {{zipcode}}<i class="far fa-edit"></i></p>
+            <p><b>First Name:</b> {{firstName}}</p>
+            <p><b>Last Name:</b> {{lastName}}</p>
+            <p><b>Email:</b> {{email}}</p>
+            <p><b>Zip Code:</b> {{zipCode}}</p>
         </div>
         <div class="col-md-6 col-sm-12">
             <h4>About my best friend</h4>
-            <p><b>Dog Name:</b> {{dog_name}}<i class="far fa-edit"></i></p>
-            <p><b>Breed:</b> {{dog_breed}}<i class="far fa-edit"></i></p>
-            <p><b>Gender:</b> {{dog_gender}}<i class="far fa-edit"></i></p>
-            <p><b>Age:</b> {{dog_age}}<i class="far fa-edit"></i></p>
-            <p><b>Personality:</b> {{dog_personality}}<i class="far fa-edit"></i></p>
+            <p><b>Dog Name:</b> {{puppyName}}</p>
+            <p><b>Breed:</b> {{puppyBreed}}</p>
+            <p><b>Personality:</b> {{puppyPersonality}}</p>
+            <p><b>Age:</b> {{puppyAge}}</p>
+            <p><b>Weight:</b> {{puppyWeight}}</p>
         </div>
     </div>
 </div>
