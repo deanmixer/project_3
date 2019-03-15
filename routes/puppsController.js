@@ -57,7 +57,7 @@ router.get('/profile', privateRoute, function(req, res) {
       puppyName: decoded.puppyName,
       puppyBreed: decoded.puppyBreed,
       puppyPersonality: decoded.puppyPersonality,
-      puppyAge: decoded.puppyName,
+      puppyAge: decoded.puppyAge,
       puppyWeight: decoded.puppyWeight,
       imgUrl: decoded.imgUrl,
       // email: (jwt.verify(req.cookies.token.email, 'ilovepups'))
