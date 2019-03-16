@@ -3,3 +3,4 @@ node_modules
 models/index.js
 models/PlayDate.js
 models/pupps.js
+.env
