@@ -1,3 +1,5 @@
 node_modules
-
 .DS_Store
+models/index.js
+models/PlayDate.js
+models/pupps.js
