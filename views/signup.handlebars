@@ -1,101 +1,130 @@
-{{!-- <section class="padd-top-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3><span class="text-thin">Welcome to puppy-play-date! We can't wait to </span>Get the puppy math <span class="text-thin">with yours.</span></h3>
-            </div>
-        </div>
-        <br> <br>
-        <div class="row">
-            <div class="col-xs-4" align="right">
-                <form action="/upload_d" method="POST" enctype="multipart/form-data">
-                    <label>Dog Image: </label>
-                    <input type="file" name="img">
-                    <input type="submit" value="Upload">
-                </form><br>
-            </div>
-            <div class="col-xs-4" align="right">
-                <form action="/create" method="post">
-                    <label for="first_name">First Name: </label>
-                    <input id="first_name" required="" type="text" align="right" name="first_name" value=""><br>
-                    <label for="last_name">Last Name: </label>
-                    <input id="last_name" required="" type="text" align="right" name="last_name" value=""><br>
-                    <label for="email">Email: </label>
-                    <input id="email" required="" type="text" name="email" value=""><br>
-                    <label for="address">Address: </label>
-                    <input id="address" required="" type="text" name="address" value=""><br>
-                    <label for="zipcode">Zip Code: </label>
-                    <input id="zipcode" required="" type="text" name="zipcode" value=""><br>
-                    <label for="dog_name">Dog Name: </label>
-                    <input id="dog_name" required="" type="text" name="dog_name" value=""><br>
-                    <label for="dog_breed">Dog Breed: </label>
-                    <input id="dog_breed" required="" type="text" name="dog_breed" value=""><br>
-                    <label for="dog_gender">Dog Gender: </label>
-                    <input id="dog_gender" required="" type="text" name="dog_gender" value=""><br>
-                    <label for="dog_age">Dog Age: </label>
-                    <input id="dog_age" required="" type="text" name="dog_age" value=""><br>
-                    <label for="dog_personality">Dog Personality: </label>
-                    <input id="dog_personality" type="text" name="dog_personality" value=""><br>
-                    <label for="dog_weight">Dog Weight: </label>
-                    <input id="dog_weight" type="text" name="dog_weight" value=""><br>
-                    <br>
-            </div>
-            <div class="col-xs-4" align="left">
-                <img src="/images/puppy1.jpg" height="300" width="250">
-            </div>
-            <div class="col-xs-8" align="right">
-                <input class="blackbox" type="submit" value="Sign Up">
-                </form>
-            </div>
-            <div class="clearfix"></div>
-</section> --}}
+{{!-- {{#if email}} --}}
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="noCookie">
+    <a class="navbar-brand pt-md-0 pt-sm-3" href="../">
+        <img src="/images/dog.png" width="22" height="22" class="d-inline-block align-mid mb-1" alt="">
+        Puppy Play Date
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item pr-2 py-1">
+        <a class="nav-link" href="../search">Find a Friend</a>
+        {{!-- <a class="nav-link" href="#">Find a Friend<span class="sr-only">(current)</span></a> --}}
+      </li>
+      <li class="nav-item pr-2 py-1">
+        <a class="nav-link" href="../scheduler">Manage Dates</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../login"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Log In</button></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../signup"><button type="button" class="btn btn-light px-2 py-1 my-2 my-sm-0">Sign Up</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Sign up</h3>
-            </div>
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark" id="cookie">
+    <a class="navbar-brand pt-md-0 pt-sm-3" href="../">
+        <img src="/images/dog.png" width="22" height="22" class="d-inline-block align-mid mb-1" alt="">
+        Puppy Play Date
+    </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item pr-2 py-1">
+        <a class="nav-link" href="../search">Find a Friend</a>
+        {{!-- <a class="nav-link" href="#">Find a Friend<span class="sr-only">(current)</span></a> --}}
+      </li>
+      <li class="nav-item pr-2 py-1">
+        <a class="nav-link" href="../scheduler">Manage Dates</a>
+      </li>
+      <li class="nav-item pr-2 py-1">
+        <a class="nav-link" href="../profile">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../login"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Change User</button></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+{{!-- {{else}} --}}
+
+{{!-- {{/if}} --}}
+
+<div class="container" id="cardContent">
+    <div class="card">
+        <div class="card-header">
+            <h4>Sign Up</h4>
         </div>
-        <br> <br> <br> <br>
-        <div class="row words">
-            <div class="col-xs-6" align="right">                
-                <form>
-                                <h4>About me:</h4>
-                    <label for="firstName">First Name: </label>
-                    <input id="firstName" required="" type="text" name="firstName" placeholder="First Name"><br>
-                    <label for="lastName">Last Name: </label>
-                    <input id="lastName" required="" type="text" name="lastName" placeholder="Last Name"><br>
-                    <label for="zipCode">Zip Code: </label>
-                    <input id="zipCode" required="" type="text" name="zipCode" placeholder="Zip Code"><br>
+        <div class="card-body">
+            <p>Or log in <a href="/login">here</a></p>   
+            <br>         
+            <form>
+                <h5>About me</h5>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input id="email" required type="email" class="form-control" name="email" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input id="password" required type="password" class="form-control" name="password" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name: </label>
+                        <input id="firstName" required type="text" class="form-control" name="firstName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name: </label>
+                        <input id="lastName" required type="text" class="form-control" name="lastName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code: </label>
+                        <input id="zipCode" required type="number" class="form-control" name="zipCode" placeholder="" min="10000" max="99999">
+                    </div>
                     <br>
-                    <br>
-                                <h4>About my friend:</h4>
-                    <label for="puppyName">Dog Name: </label>
-                    <input id="puppyName" required="" type="text" name="puppyName" placeholder="Dog Name"><br>
-                    <label for="dogGender">Dog Gender: </label>
-                    <input id="dogGender" required="" type="text" name="dogGender" placeholder="Dog Gender"><br>
-                    <label for="dogBreed">Dog Breed: </label>
-                    <input id="dogBreed" required="" type="text" name="dogBreed" placeholder="Dog Breed"><br>
-                    <label for="dogPers">Dog Personality: </label>
-                    <input id="dogPers" required="" type="text" name="dogPers" placeholder="Dog Presonality"><br>
-                    <label for="dogAge">Dog Age: </label>
-                    <input id="dogAge" required="" type="text" name="dogAge" placeholder="Dog Age"><br>
-                    <label for="dogWeight">Dog Weight: </label>
-                    <input id="dogWeight" required="" type="text" name="dogWeight" placeholder="Dog Weight"><br>
-                    <label for="dogImage">Dog Image: </label>
-                    <input id="dogImage" required="" type="text" name="dogImage" placeholder="Dog Image"><br>
-                    <br>
-                    <br>
-                    <label for="email">Email: </label>
-                    <input id="email" required="" type="email" name="email" placeholder="Email"><br>
-                    <label for="password">Password: </label>
-                    <input id="password" required="" type="password" name="password" placeholder="password"><br>
-                    <br>
-                    <input type="submit" value="Submit"> {{!-- Can have a a BUTTON or INPUT, just make sure to have type="submit" --}}
-                </form>
-            </div>
+                <h5>About my friend</h5>
+                    <div class="form-group">
+                        <label for="puppyName">Dog Name: </label>
+                        <input id="puppyName" required type="text" class="form-control" name="puppyName" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogGender">Dog Gender: </label>
+                        {{!-- <input id="dogGender" required type="text" class="form-control" name="dogGender" placeholder=""> --}}
+                        <select class="form-control" id="dogGender">
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="dogBreed">Dog Breed: </label>
+                        <input id="dogBreed" required type="text" class="form-control" name="dogBreed" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogPers">Dog Personality: </label>
+                        <input id="dogPers" required type="text" class="form-control" name="dogPers" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogAge">Dog Age: </label>
+                        <input id="dogAge" required type="number" class="form-control" name="dogAge" placeholder="" max="40">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogWeight">Dog Weight: </label>
+                        <input id="dogWeight" required type="number" class="form-control" name="dogWeight" placeholder="" max="400">
+                    </div>
+                    <div class="form-group">
+                        <label for="dogImage">Dog Image (URL): </label>
+                        <input id="dogImage" required type="text" class="form-control" name="dogImage" placeholder="">
+                    </div>
+                <button type="submit" class="btn btn-warning">Sign Up</button> {{!-- Can have a a BUTTON or INPUT, just make sure to have type="submit" --}}
+            </form>
         </div>
     </div>
+</div>
 
 <script>
     $('form').on('submit', function(e){

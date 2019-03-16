@@ -1,37 +1,29 @@
-// module.exports = function(sequelize, DataTypes) {
-//   const playDate = sequelize.define('playDate', {
-//     id: {
-//       type: DataTypes.INTEGER(255),
-//       allowNull: false,
-//       autoIncrement: true,
-//       primaryKey: true,
-//     },
-//     match_sender: {
-//       type: DataTypes.STRING(255),
-//       allowNull: false,
-//     },
-//     match_receiver: {
-//       type: DataTypes.STRING(255),
-//       allowNull: false,
-//     },
-//     date: {
-//       type: DataTypes.DATE,
-//       allowNull: false,
-//     },
-//     time: {
-//       type: DataTypes.TIME,
-//       allowNull: false,
-//     },
-//     location: {
-//       type: DataTypes.STRING,
-//       allowNull: false,
-//     },
-//     accepted: {
-//       type: DataTypes.BOOLEAN,
-//       allowNull: false,
-//     },
-//   });
-//   return playDate;
 
-// }
+var orm = require("../config/orm.js");
 
+var playDate = {
+    all: function(cb) {
+      orm.all("playDate", function(res) {
+        cb(res);
+      });
+    },
+    // The variables cols and vals are arrays.
+    create: function(cols, vals, cb) {
+      orm.create("playDate", cols, vals, function(res) {
+        cb(res);
+      });
+    },
+    update: function(objColVals, condition, cb) {
+      orm.update("playDate", objColVals, condition, function(res) {
+        cb(res);
+      });
+    },
+    delete: function(condition, cb) {
+      orm.delete("playDate", condition, function(res) {
+        cb(res);
+      });
+    }
+  };
+
+
+module.exports = playDate;

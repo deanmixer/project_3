@@ -20,4 +20,14 @@ CREATE TABLE users
     imgUrl longtext,
 	PRIMARY KEY (id)
 );
-  
+USE pupps_db; 
+CREATE TABLE playDate
+(
+   id int NOT NULL AUTO_INCREMENT,
+   mail1 VARCHAR(255) NOT NULL,
+   mail2 VARCHAR(255) NOT NULL,
+   location VARCHAR(255) NOT NULL,
+   accepted BOOLEAN NOT NULL,
+   date DATE NOT NULL,
+   PRIMARY KEY (id)
+   );

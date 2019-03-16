@@ -1,5 +1,4 @@
 {{!-- {{#myProfile}} --}}
-
 <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
     <a class="navbar-brand pt-md-0 pt-sm-3" href="../">
         <img src="/images/dog.png" width="22" height="22" class="d-inline-block align-mid mb-1" alt="">
@@ -17,45 +16,57 @@
       <li class="nav-item pr-2 py-1">
         <a class="nav-link" href="../scheduler">Manage Dates</a>
       </li>
-      <li class="nav-item py-1 pr-2 active">
+      <li class="nav-item pr-2 py-1 active">
         <a class="nav-link" href="../profile">Profile<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../login"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Change Profile</button></a>
+        <a class="nav-link" href="../login"><button type="button" class="btn btn-outline-light px-2 py-1 my-2 my-sm-0">Change User</button></a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="container" id="bodycontent">
-    <div class="row" id="headline">
+    {{!-- <div class="row" id="headline">
         <div class="col-md-12 text-center">
             <h3><span class="text-thin">I'm</span> MUTTS<span class="text-thin"> over my best friend!</span></h3>
         </div>
-    </div>
+    </div> --}}
     <div class="row text-center"> 
         <div class="col-md-12" id="profilePhoto"> 
             {{!-- <img height ="150" src={{img_url}}> --}}
-            <img height ="150" src={{imgUrl}}>
+            <img height ="250" class="img-thumbnail" src={{imgUrl}}>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
-            <h4>About me</h4>
-            <p><b>First Name:</b> {{firstName}}</p>
-            <p><b>Last Name:</b> {{lastName}}</p>
-            <p><b>Email:</b> {{email}}</p>
-            <p><b>Zip Code:</b> {{zipCode}}</p>
+          <div class="card">
+            <div class="card-header">
+                <h4>About Me</h4>
+            </div>
+            <div class="card-body">
+              <p><b>First Name:</b> {{firstName}}</p>
+              <p><b>Last Name:</b> {{lastName}}</p>
+              <p><b>Email:</b> {{email}}</p>
+              <p><b>Zip Code:</b> {{zipCode}}</p>
+            </div>
+          </div>   
         </div>
         <div class="col-md-6 col-sm-12">
-            <h4>About my best friend</h4>
-            <p><b>Dog Name:</b> {{puppyName}}</p>
-            <p><b>Breed:</b> {{puppyBreed}}</p>
-            <p><b>Personality:</b> {{puppyPersonality}}</p>
-            <p><b>Age:</b> {{puppyAge}}</p>
-            <p><b>Weight:</b> {{puppyWeight}}</p>
+          <div class="card">
+            <div class="card-header">
+                <h4>About My Best Friend</h4>
+            </div>
+            <div class="card-body">
+              <p><b>Dog Name:</b> {{puppyName}}</p>
+              <p><b>Breed:</b> {{puppyBreed}}</p>
+              <p><b>Personality:</b> {{puppyPersonality}}</p>
+              <p><b>Age:</b> {{puppyAge}}</p>
+              <p><b>Weight:</b> {{puppyWeight}}</p>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 </div>
     {{!-- <div class="clearfix"></div> --}}
 

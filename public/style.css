@@ -2,11 +2,29 @@ body {
     background-color: #F5F5F5;
 }
 
+.hide {
+    display: none;
+}
+
+.show {
+    display: default;
+}
+
 #bodycontent {
     padding-top: 80px;
     padding-bottom: 40px;
 }
 
+#cardContent {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    margin: auto;
+    max-width: 450px;
+}
+
+#userMessage {
+    color: red;
+}
 #caroMain {
     padding-top: 65px;
     padding-bottom: 4px;   
@@ -23,7 +41,7 @@ body {
     height: 625px;   
 }
 
-h4 {
+h4, label {
     color: #f39331;
 }
 
