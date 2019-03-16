@@ -14,6 +14,11 @@ function privateRoute(req, res, next) {
   let token;
   // let decoded;
   if (req.cookies.token) {
+    jwt.verify(token, 'ilovepups', function(err, decoded) {
+      if (err) {
+          res.redirect('/login');
+      }
+    });
     token = req.cookies.token;
     decoded = jwt.verify(token, 'ilovepups');
   }
