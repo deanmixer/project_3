@@ -1,9 +1,35 @@
-{{#if accepted}}
+{{!-- {{#if accepted}}
 <li>
-	{{mail1}}
-	<button class="change-accepted" playDates-id="{{id}}" playDates-newStatus="{{accepted}}">Accept Date</button>
+	<div class="py-2">
+		{{mail1}}
+		<button class="btn btn-warning" playDates-id="{{id}}" playDates-newStatus="{{accepted}}">Accept Date</button>
+	</div>
 {{else}}
 <li class="list-group-item disabled" aria-disabled="true">
 	{{mail1}}	
 {{/if}}
+</li> --}}
+
+
+{{#if accepted}}
+
+<li class="list-group-item">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-xs-12">
+				{{mail1}}
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<button class="btn btn-success float-sm-none float-md-right" playDates-id="{{id}}" playDates-newStatus="{{accepted}}">Accept</button>
+			</div>
+			<div class="col-md-2 col-xs-6">
+				<button class="btn btn-danger float-sm-none float-md-right" playDates-id="{{id}}" playDates-newStatus="{{accepted}}">Decline</button>
+			</div>
+		</div>
+	</div>
 </li>
+{{else}}
+<li class="list-group-item disabled" aria-disabled="true">
+	{{mail1}}	
+{{/if}}
+</ul>
