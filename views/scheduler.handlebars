@@ -58,26 +58,25 @@
 
 
 <div class="container" id="bodycontent">
-    <div class="row" id="headline">
-        <div class="col-md-12 text-center">
-            <h3>"Yep! <span class="text-thin">I got this!" </span> </h3>
-        </div>
-    </div>
     <div class="row">
         <div class="col-md-12">
             <h4>Pending Play Dates</h4>
+        {{#each playDates}}
+        {{#unless accepted}}
+          {{> playDates/playdate-block accepted=true}}
+        {{/unless}}
+        {{/each}}
         </div>
     </div>
     <hr>
     <div class="row">
         <div class="col-md-12">
-            <h4>Upcoming Play Dates</h4>
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Past Play Dates</h4>
+            <h4>Accepted Play Dates</h4>
+        {{#each playDates}}
+        {{#if accepted}}
+          {{> playDates/playdate-block accepted=false}}
+        {{/if}}
+        {{/each}}
         </div>
     </div>
 </div>

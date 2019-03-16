@@ -52,45 +52,41 @@
   </div>
 </nav>
 
-<section class="padd-top-60" id="bodycontent">
 
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-12 text-center">
-
-                <h3>Pull out <span class="text-thin"> your perfect match!</span></h3>
-
+<div class="container" id="bodycontent">
+  <div class="row">
+    <div class="col-md-12">
+      {{#each user}}
+        {{!-- {{#unless {{email}} == }} --}}
+        <div class="card" style="max-width: 750px; margin: auto;">
+          <div class="card-header">
+              <div class="row">
+                <div class="col-md-8 col-sm-12">
+                  <h4>{{firstName}} and {{puppyName}}</h4>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <span><button class="btn btn-warning float-right" user-id="{{email}}">Invite for play date!</button></span>
+                </div>
             </div>
-
+          </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <img height ="175" src={{imgUrl}}>
+                </div>
+                <div class="col-md-8 col-sm-12">
+                  <p><b>Zip Code:</b> {{zipCode}}</p>
+                  <p><b>Breed:</b> {{puppyBreed}}</p>
+                  <p><b>Personality:</b> {{puppyPersonality}}</p>
+                  <p><b>Dog Age:</b> {{puppyAge}}</p>
+                  <p><b>Dog Weight:</b> {{puppyWeight}}</p>
+                </div>
+              </div>
+            </div>
         </div>
-
-        <br> <br> <br> <br>
-
-        <div class="row words">
-
-      <h4>Users</h4>
-      <ul class="list-group">
-        {{#each user}}
-        {{!-- {{#unless devoured}} 
-          {{> burgers/burger-block devoured=true}}
-        {{/unless}} --}}
-<li>
-  {{email}}
-{{!-- <button class="change-devoured" data-id="{{id}}" data-newEaten="{{devoured}}">EAT!</button>
-{{else}}
-<li class="list-group-item disabled" aria-disabled="true">
-{{burger_name}}	
-{{/if}} --}}
-</li>
-        {{/each}}
-      </ul>
-
-        </div>
-
-    </div>
-
-    <div class="clearfix"></div>
-
-</section>
+            <hr>
+         
+      {{/each}}
+    </div> 
+  </div>
+</div> 

@@ -1,0 +1,9 @@
+{{#if accepted}}
+<li>
+	{{mail1}}
+	<button class="change-accepted" playDates-id="{{id}}" playDates-newStatus="{{accepted}}">Accept Date</button>
+{{else}}
+<li class="list-group-item disabled" aria-disabled="true">
+	{{mail1}}	
+{{/if}}
+</li>

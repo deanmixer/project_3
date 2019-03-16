@@ -2,6 +2,7 @@ const express = require(`express`);
 const router = express.Router();
 const pupps = require(`../models/pupps.js`);
 const userProf = require('../models/user.js');
+const playDates = require('../models/PlayDate.js');
 const jwt = require('jsonwebtoken');
 // get routes -> index.handlebars
 // router.get(`/`, function(req, res) {
@@ -88,7 +89,13 @@ router.get('/profile', privateRoute, function(req, res) {
 // });
 
 router.get('/scheduler', function(req, res) {
-  res.render('scheduler');
+  playDates.all(function(data) {
+    const hbsObject = {
+      playDates: data,
+    };
+    console.log(hbsObject);
+    res.render('scheduler', hbsObject);
+  });
 });
 
 router.get('/search', function(req, res) {
