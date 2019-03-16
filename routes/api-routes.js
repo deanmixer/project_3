@@ -20,6 +20,7 @@ router.post('/login', function(req, res) {
         }
 
         if (data.length === 0) {
+            res.send("Email not found. Please create an account")
             return res.status(402).json({
                 message: "Email not found. Please create an account."
             });

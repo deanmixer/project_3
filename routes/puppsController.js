@@ -17,6 +17,10 @@ function privateRoute(req, res, next) {
     token = req.cookies.token;
     decoded = jwt.verify(token, 'ilovepups');
   }
+  // if (jwt.verify(req.cookies.token, 'ilovepups').email) {
+  //   token = req.cookies.token;
+  //   decoded = jwt.verify(token, 'ilovepups');
+  // }
   if (decoded) {
     next();
   } else {
@@ -24,16 +28,17 @@ function privateRoute(req, res, next) {
   }
 }
 
-router.get('/set/:id', function(req, res) {
-  const id = req.params.id;
-  res.cookie('id-' + id, id, {maxAge: 6000000}).json({
-    message: 'Cookie set!',
-  });
-  // res.render('index');
-});
+// router.get('/set/:id', function(req, res) {
+//   const id = req.params.id;
+//   res.cookie('id-' + id, id, {maxAge: 6000000}).json({
+//     message: 'Cookie set!',
+//   });
+//   // res.render('index');
+// });
 
 router.get('/', function(req, res) {
   userProf.all(function(data) {
+    console.log(req.cookies.token);
     const hbsObject = {
       user: data,
     };
@@ -43,7 +48,13 @@ router.get('/', function(req, res) {
 });
 
 router.get('/login', function(req, res) {
-  res.render('login');
+  userProf.all(function(data) {
+    const hbsObject = {
+      user: data,
+    };
+    console.log(hbsObject);
+    res.render('login', hbsObject);
+  });
 });
 
 router.get('/profile', privateRoute, function(req, res) {
@@ -67,9 +78,9 @@ router.get('/profile', privateRoute, function(req, res) {
   });
 });
 
-router.get('/result', function(req, res) {
-  res.render('result');
-});
+// router.get('/result', function(req, res) {
+//   res.render('result');
+// });
 
 router.get('/scheduler', function(req, res) {
   res.render('scheduler');
@@ -86,11 +97,17 @@ router.get('/search', function(req, res) {
 });
 
 router.get('/signup', function(req, res) {
-  res.render('signup');
+  userProf.all(function(data) {
+    const hbsObject = {
+      user: data,
+    };
+    console.log(hbsObject);
+    res.render('signup', hbsObject);
+  });
 });
 
-router.get('/thanks', function(req, res) {
-  res.render('thanks');
-});
+// router.get('/thanks', function(req, res) {
+//   res.render('thanks');
+// });
 
 module.exports = router;
