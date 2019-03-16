@@ -44,7 +44,7 @@ router.post('/login', function(req, res) {
                 puppyAge: data[0].puppyAge,
                 puppyWeight: data[0].puppyWeight,
                 imgUrl: data[0].imgUrl
-            }, PROCESS.ENV.SECRET, { expiresIn: '1h' });
+            }, process.env.SECRET, { expiresIn: '1h' });
             return res.cookie("token", token).json({
                 message: "Your are now logged in!"
             })
@@ -103,7 +103,7 @@ router.post('/signup', function(req, res) {
                     puppyAge: data[0].puppyAge,
                     puppyWeight: data[0].puppyWeight,
                     imgUrl: data[0].imgUrl
-                }, PROCESS.ENV.SECRET, { expiresIn: '1h' });
+                }, process.env.SECRET, { expiresIn: '1h' });
                 return res.cookie("token", token).json({
                     message: "User successfully created"
                 });

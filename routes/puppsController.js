@@ -15,7 +15,7 @@ function privateRoute(req, res, next) {
   let token;
   if (req.cookies.token) {
     token = req.cookies.token;
-    decoded = jwt.verify(token, PROCESS.ENV.SECRET);
+    decoded = jwt.verify(token, process.env.SECRET);
   }
   if (decoded) {
     next();
