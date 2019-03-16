@@ -13,20 +13,10 @@ let decoded;
 
 function privateRoute(req, res, next) {
   let token;
-  // let decoded;
   if (req.cookies.token) {
-    // jwt.verify(token, 'ilovepups', function(err, decoded) {
-    //   if (err) {
-    //       res.redirect('/login');
-    //   }
-    // });
     token = req.cookies.token;
-    decoded = jwt.verify(token, 'ilovepups');
+    decoded = jwt.verify(token, PROCESS.ENV.SECRET);
   }
-  // if (jwt.verify(req.cookies.token, 'ilovepups').email) {
-  //   token = req.cookies.token;
-  //   decoded = jwt.verify(token, 'ilovepups');
-  // }
   if (decoded) {
     next();
   } else {
@@ -77,7 +67,6 @@ router.get('/profile', privateRoute, function(req, res) {
       puppyAge: decoded.puppyAge,
       puppyWeight: decoded.puppyWeight,
       imgUrl: decoded.imgUrl,
-      // email: (jwt.verify(req.cookies.token.email, 'ilovepups'))
     };
     console.log(hbsObject);
     res.render('profile', hbsObject);
