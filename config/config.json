@@ -2,14 +2,14 @@
   "development": {
     "username": "root",
     "password": "rootroot5",
-    "database": "puppy_info",
+    "database": "pupps_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "rootroot5",
-    "database": "puppy_info",
+    "database": "pupps_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
