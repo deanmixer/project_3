@@ -17,6 +17,11 @@ body {
     margin-bottom: 60px;
 }
 
+.list-group-item {
+    max-width: 600px;
+    margin-bottom: 12px;
+}
+
 .hide {
     display: none;
 }
